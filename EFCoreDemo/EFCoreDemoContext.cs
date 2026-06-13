@@ -26,6 +26,9 @@ namespace EFCoreDemo
         // This creates the Users table (added in this assignment)
         public DbSet<User> Users { get; set; }
 
+        // This creates the Statuses table
+        public DbSet<Status> Statuses { get; set; }
+
         // This method configures the connection to our MySQL database
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
